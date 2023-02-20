@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video src="vid.mp4" controls autoplay loop muted id="sidepic">
+        Your browser does not support the video tag.
+      </video>
+<div id="mainpage">
+<h3 id="heading">Dive into the universe of Dominion Online, An ever-expanding Metaverse populated by more that 5 million players from all around the world.</h3>
+<form action="" id="form">
+    <fieldset>
+      <legend>Your Journey begins Now!</legend>
+      <div class="form-row">
+        <div class="form-col">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" minlength="1" maxlength="10" required>
+        </div>
+        <div class="form-col">
+          <label for="lname" minlength="1" maxlength="10">Last Name</label>
+          <input type="text" id="lname" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-col">
+          <label for="mail">Email</label>
+          <input type="email" id="mail" required>
+        </div>
+        <div class="form-col">
+          <label for="tel" >Phone</label>
+          <input type="tel" id="tel" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-col">
+          <label for="pword">Password</label>
+          <input type="password" id="pword" required>
+          <span id="password-error" class="error-message"></span>
+        </div>
+        <div class="form-col">
+          <label for="cpword">Confirm Password</label>
+          <input type="password" id="cpword" required>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  
+  
+  
+ <button type="submit" form="form" >Create Account</button> 
+ <p>Already have an account? <a href="">Log in</a></p>
+</div>
+  
+<script>
+const pass = document.getElementById('pword')
+const cpass = document.getElementById('cpword')
+const panel = document.getElementById('password-error')
+const phone = document.getElementById('tel')
+
+pass.addEventListener('input', validation)
+phone.addEventListener('input', checkNumber)
+
+cpass.addEventListener('input', validation)
+function validation(){
+    panel.textContent=''
+if (pass.value===cpass.value){
+    panel.textContent='Matched'
+    panel.style.color='green'
+}else
+{
+    panel.textContent='Not Matched'
+    panel.style.color='red'
+
+}
+
+}
+
+function checkNumber(event){
+
+    const input = event.target.value;
+    event.target.value = input.replace(/\D/g, '');
+
+}
+
+</script>
+
+
+</body>
+</html>

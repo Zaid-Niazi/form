@@ -1,0 +1,123 @@
+
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+h3{
+  margin-left: 25px;
+}
+body{
+  background-color: rgba(220, 220, 220, 0.295);
+}
+
+  #sidepic{
+    width: 30vw;
+    /* min-width: 500px; */
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #mainpage{
+    padding: 5vh;
+    height: 100vh;
+    width: 65vw;
+    margin-left: 27vw ;
+    background: linear-gradient(90deg, #ff2f2f, #ff5c5c, #ff8585, #ffd4d4, #b4d4ff, #9b9bff, #864fff, #5c2aff);
+
+  }
+
+#heading{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 2em;
+}
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 67.5vw;
+    right: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ff2f2f, #ff5c5c, #ff8585, #ffd4d4, #b4d4ff, #9b9bff, #864fff, #5c2aff);
+  
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+
+  form fieldset {
+    
+    margin: 0;
+    padding: 50px;
+    width: 65vw !important;
+    border: none;
+
+  }
+
+  input:focus{
+    outline-color: aqua;
+   
+  }
+
+
+  input:invalid {
+    outline-color: red;
+  }
+  
+
+input{
+  width: 350px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border-color: aliceblue;
+  border-style: solid;
+}
+  button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    height: 50px;
+    width: 250px;
+    font-size: large;
+    color: white;
+    background-color: rgba(74, 143, 74, 0.877);
+    border-radius: 10px;
+  }
+p{
+  margin-left: 25px;
+}
+  legend{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+  
+  }
+
+  -----------------------
