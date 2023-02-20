@@ -7,6 +7,7 @@ video::-webkit-media-controls {
 
 body {
   font-family: sans-serif;
+  background-color: #9b9bff;
 }
 h3{
   margin-left: 25px;
@@ -25,7 +26,7 @@ body{
   }
   #mainpage{
     padding: 5vh;
-    height: 100vh;
+    height: 80vh;
     width: 65vw;
     margin-left: 27vw ;
     background: linear-gradient(90deg, #ff2f2f, #ff5c5c, #ff8585, #ffd4d4, #b4d4ff, #9b9bff, #864fff, #5c2aff);
@@ -33,7 +34,7 @@ body{
   }
 
 #heading{
-  margin-top: 200px;
+  margin-top: 20px;
   text-align: center;
   font-size: 2em;
 }
